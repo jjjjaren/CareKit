@@ -90,6 +90,8 @@ OCK_CLASS_AVAILABLE
  */
 @property (nonatomic, copy, nullable, readonly) OCKCarePlanStore *store;
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -56,7 +56,6 @@
 
 
 @implementation OCKCareContentsViewController {
-    UITableView *_tableView;
     UIRefreshControl *_refreshControl;
     NSMutableArray<NSMutableArray<OCKCarePlanEvent *> *> *_events;
     NSMutableArray *_weekValues;

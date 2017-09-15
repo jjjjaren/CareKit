@@ -187,6 +187,11 @@ OCK_CLASS_AVAILABLE
 
 
 /**
+ A reference to the `UITableView` contained in the view controller
+ */
+@property (nonatomic, readonly, nonnull) UITableView *tableView;
+
+/**
  The image that will be used to mask the fill shape in the week view.
  
  In order to provide a custom maskImage, you must have a regular size and small size.

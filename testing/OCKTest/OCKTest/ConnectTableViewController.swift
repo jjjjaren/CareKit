@@ -153,15 +153,15 @@ class ConnectTableViewController: UITableViewController, OCKConnectViewControlle
         
         let chart = OCKBarChart(title: "Chart Title", text: "Chart Description", tintColor: .gray, axisTitles: ["Axis #1", "Axis #2"], axisSubtitles: ["Subtitle #1", "Subtitle #2"], dataSeries: [bar1, bar2, bar3])
         
-        let doc = OCKDocument(title: nil, elements:[OCKDocumentElementChart(chart: chart)])
-        
-        doc.createPDFData { (data, error) in
-                        let activityController = UIActivityViewController(activityItems: [data], applicationActivities: nil)
-                        activityController.excludedActivityTypes = [UIActivityType.postToVimeo, UIActivityType.openInIBooks, UIActivityType.postToFlickr]
-                         activityController.popoverPresentationController?.sourceView = sourceView
-                        self.present(activityController, animated: true) {}
-            
-        }
+//        let doc = OCKDocument(title: nil, elements:[OCKDocumentElementChart(chart: chart)])
+//        
+//        doc.createPDFData { (data, error) in
+//                        let activityController = UIActivityViewController(activityItems: [data], applicationActivities: nil)
+//                        activityController.excludedActivityTypes = [UIActivityType.postToVimeo, UIActivityType.openInIBooks, UIActivityType.postToFlickr]
+//                         activityController.popoverPresentationController?.sourceView = sourceView
+//                        self.present(activityController, animated: true) {}
+//            
+//        }
    
     }
 	

@@ -268,13 +268,13 @@ extension RootViewController: OCKConnectViewControllerDelegate {
     
     /// Called when the user taps a contact in the `OCKConnectViewController`.
     func connectViewController(_ connectViewController: OCKConnectViewController, didSelectShareButtonFor contact: OCKContact, presentationSourceView sourceView: UIView?) {
-        let document = sampleData.generateSampleDocument()
-        document.createPDFData {(data, error) in
-            let activityViewController = UIActivityViewController(activityItems: [data], applicationActivities: nil)
-            DispatchQueue.main.async {
-                self.present(activityViewController, animated: true, completion: nil)
-            }
-        }
+//        let document = sampleData.generateSampleDocument()
+//        document.createPDFData {(data, error) in
+//            let activityViewController = UIActivityViewController(activityItems: [data], applicationActivities: nil)
+//            DispatchQueue.main.async {
+//                self.present(activityViewController, animated: true, completion: nil)
+//            }
+//        }
         
         func connectViewController(_ viewController: OCKConnectViewController, didSendConnectMessage message: String, careTeamContact contact: OCKContact) {
             let dateString = DateFormatter.localizedString(from: Date(), dateStyle: .short, timeStyle: .short)
